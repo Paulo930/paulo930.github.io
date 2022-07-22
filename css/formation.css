@@ -1,0 +1,122 @@
+.formation {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 4rem 0 10rem 0;
+  position: relative;
+}
+
+.formation::after {
+  content: '';
+  width: 12.5rem;
+  height: 12.187rem;
+  background-image: url('../img/marca.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: absolute;
+  bottom: -95px;
+}
+
+.formations {
+  margin-top: 2.5rem;
+  margin-bottom: 4rem;
+}
+
+.formations li {
+  background-color: var(--cor-7);
+  border-radius: 5px;
+  padding: 1.5rem;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  max-width: 460px;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.formations li h3 {
+  color: var(--cor-5);
+  text-transform: uppercase;
+  position: relative;
+}
+
+.formations li h3::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: -2rem;
+  width: 16px;
+  height: 16px;
+  background-image: url('../img/desc-logo.svg');
+}
+
+.formations li span {
+  justify-self: end;
+}
+
+.formations li p {
+  grid-column: 1 / -1;
+}
+
+.cursos,
+.idiomas {
+  margin-left: 7rem;
+}
+
+.cursos {
+  margin-bottom: 2.25rem;
+}
+
+.cursos li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 376px;
+}
+
+.idiomas span {
+  color: var(--cor-3);
+}
+
+.cursos li:first-child,
+.idiomas li:first-child {
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.cursos li:first-child::before,
+.idiomas li:first-child::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: -24px;
+  width: 16px;
+  height: 16px;
+  background-image: url('../img/desc-logo.svg');
+}
+
+.cursos li:nth-child(n + 2) + li,
+.idiomas li:nth-child(n + 2) + li {
+  margin-top: 0.75rem;
+}
+
+@media (max-width: 744px) {
+  .formation {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .formation h2 {
+    grid-row: 1/2;
+  }
+
+  .formations {
+    margin-top: 2rem;
+  }
+  .cursos,
+  .idiomas {
+    margin-left: 12px;
+  }
+  .formation::after {
+    right: 0px;
+  }
+}

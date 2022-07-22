@@ -1,0 +1,146 @@
+:root {
+  --cor-1: #e0e0e0;
+  --cor-2: #4f728c;
+  --cor-3: #62849d;
+  --cor-4: #082032;
+  --cor-5: #ff4c29;
+  --cor-6: #021320;
+  --cor-7: #16364f;
+  --cor-8: #031624;
+  --cor-9: #244156;
+}
+
+body {
+  background-color: var(--cor-4);
+  color: var(--cor-1);
+  background-image: url('../img/desc.png'), url('../img/desc-laranja.png'),
+    url('../img/desc-azul.png');
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: right top, right bottom, right bottom;
+  background-size: 877px 691px, 595px 881px, 772px 833px;
+  overflow-x: hidden !important;
+}
+
+.container {
+  width: min(100% - 2rem, 1160px);
+  margin-inline: auto;
+}
+
+.font-1-xxl {
+  opacity: 0.4;
+  text-transform: uppercase;
+  color: var(--cor-2);
+  font-family: 'Fira Code', monospace;
+  max-width: 4ch;
+  word-break: break-all;
+  font-size: 9rem;
+  letter-spacing: -0.05rem;
+  line-height: 8.5rem;
+}
+
+.font-1-xl {
+  font-size: 4rem;
+  font-family: 'Fira Code', monospace;
+  line-height: 4rem;
+}
+
+.font-1-l {
+  font-family: 'Fira Code', monospace;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.font-1-lb {
+  font-family: 'Fira Code', monospace;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.font-1-mx {
+  font-family: 'Fira Code', monospace;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.font-1-m {
+  font-family: 'Fira Code', monospace;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.font-1-xs {
+  font-family: 'Fira Code', monospace;
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+
+.font-2-l {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.font-2-mb {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.font-2-m {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.font-2-xs {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+
+.links-redes {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.links-redes a svg path {
+  transition: 0.2s ease;
+}
+
+.links-redes a:hover svg path {
+  fill: var(--cor-5);
+}
+
+@media (max-width: 744px) {
+  .font-1-xxl {
+    font-size: 2rem;
+    text-transform: capitalize;
+    max-width: initial !important;
+    line-height: 1.5rem;
+    color: var(--cor-1);
+    opacity: 1;
+  }
+
+  .font-1-xl {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+
+  .font-1-l,
+  .font-1-lb {
+    font-size: 1.5rem;
+  }
+
+  .font-2-l,
+  .font-2-m,
+  .font-2-mb {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 390px) {
+  body {
+    background-image: none;
+  }
+}

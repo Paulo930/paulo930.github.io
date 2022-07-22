@@ -1,0 +1,39 @@
+.footer {
+  background-color: var(--cor-6);
+  padding: 10rem 0 4rem 0;
+}
+
+.footer-contact li a {
+  color: #e0e0e0;
+  transition: 0.2s ease;
+}
+
+.footer-contact li > a:hover {
+  color: var(--cor-5);
+}
+
+.footer-contact li + li {
+  margin-top: 1.25rem;
+}
+
+.footer-copy {
+  color: #62849d;
+}
+
+@media (min-width: 744px) {
+  .footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 7.5rem;
+  }
+}
+
+@media (max-width: 744px) {
+  .footer-text {
+    margin-bottom: 2rem;
+    max-width: 350px;
+  }
+  .footer-contact {
+    margin-bottom: 4rem;
+  }
+}

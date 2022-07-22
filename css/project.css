@@ -1,0 +1,107 @@
+.projetc {
+  background-color: var(--cor-8);
+}
+
+.project-content > p > span {
+  color: var(--cor-5);
+}
+
+.projetc-lists {
+  margin-top: 2.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.8rem;
+}
+
+.projetc-list {
+  padding: 1.5rem;
+  border-radius: 5px;
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+  background-color: var(--cor-7);
+}
+
+.projetc-list > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-pasta {
+  width: 42px;
+  height: 40px;
+}
+
+.projetc-icons {
+  display: flex;
+  gap: 12px;
+}
+
+.projetc-title {
+  margin: 2rem 0 1.5rem 0;
+}
+
+.projetc-list > p {
+  align-self: start;
+}
+
+.projetc-list > p > span {
+  color: var(--cor-5);
+}
+
+.projetc-list > ul {
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.projetc-list > ul li {
+  color: var(--cor-3);
+}
+
+.project-link {
+  margin-top: 2rem;
+  display: block;
+  color: var(--cor-3);
+  width: max-content;
+  transition: 0.2s ease;
+}
+
+.project-link svg path {
+  transition: 0.2s ease;
+}
+
+.project-link:hover {
+  color: var(--cor-5);
+}
+
+.project-link:hover svg path {
+  stroke: var(--cor-5);
+}
+
+@media (min-width: 744px) {
+  .projetc > div {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 4rem 0;
+  }
+}
+
+@media (max-width: 744px) {
+  .projetc > div {
+    padding: 4rem 0;
+  }
+  .projetc div > h2 {
+    margin-bottom: 1.25rem;
+  }
+
+  .projetc-list {
+    min-width: 270px;
+  }
+  .projetc-lists {
+    max-width: 750px;
+    overflow-y: auto;
+    margin-top: 2rem;
+  }
+}
